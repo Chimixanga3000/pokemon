@@ -1,26 +1,22 @@
 <div class="container">
-    <h1>ALTA DE TAREAS</h1>
+    <h1>ALTA DE POKEMONES</h1>
 
-    
+
     <div class="form">
         <div class="col-sm-4">
             <p>
-                <label for="">Nombre de la tarea</label>
-                <input type="text" class="form-control" [(ngModel)]="libro.nombret"/>
+                <label for="">Nombre del pokemon</label>
+                <input type="text" class="form-control" [(ngModel)]="libro.nombret" />
             </p>
             <p>
-                <label for="">Descripcion</label>
-                <input type="text" class="form-control" [(ngModel)]="libro.des"/>
+                <label for="">Tamaño</label>
+                <input type="text" class="form-control" [(ngModel)]="libro.tamano" />
             </p>
             <p>
-                <label for="">Fecha</label>
-                <input type="text" class="form-control" [(ngModel)]="libro.fecha"/>
+                <label for="">Tipo del pokemon</label>
+                <input type="text" class="form-control" [(ngModel)]="libro.tipo" />
             </p>
-            <p>
-                <label for="">Estado de la tarea</label>
-                <input type="text" class="form-control" [(ngModel)]="libro.tipo"/>
-            </p>
-    
+
             <div class="datos">
                 <table>
                     <tr>
@@ -46,35 +42,34 @@
         </div>
         <div class="lista">
             <p>
-                <strong>Tipos de cliente</strong>
+                <strong>Tipos de Pokemones</strong>
             </p>
-            -Pendiente <br>
-            -En Progreso <br>
-            -Completado <br>
-            -Sin definir <br><br><br>
+            1:Electrico <br>
+            2:Planta <br>
+            3:Fuego <br>
+            4:Agua <br>
+            5:Dragón <br>
+            0:Sin definir <br>
         </div>
-    </div>
 
-    <table class="table table table-striped">
-        <thead>
-            <th>Nombre de la tarea</th>
-            <th>Descripcion</th>
-            <th>Fecha de vencimiento</th>
-            <th>Estado de la tarea</th>
-            <th>Seleccionar</th>
-        </thead>
-        <tbody>
-            <tr *ngFor="let libro of libros">
-                <td>{{ libro.nombret }}</td>
-                <td>{{ libro.des }}</td>
-                <td>{{ libro.fecha }}</td>
-                <td>{{ libro.tipo }}</td>
-                <td>
-                    <button type="button" class="btn btn-primary" (click)="selectLibro(libro)">
-                        Seleccionar
-                    </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        <table class="table table table-striped">
+            <thead>
+                <th>Nombre del Pokemon</th>
+                <th>Tamaño</th>
+                <th>Tipo</th>
+                <th>Seleccionar</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let libro of libros">
+                    <td>{{ libro.nombret }}</td>
+                    <td>{{ libro.tamano }}</td>
+                    <td>{{ libro.tipo }}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary" (click)="selectLibro(libro)">
+                            Seleccionar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

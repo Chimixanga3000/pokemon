@@ -1,11 +1,11 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-        apiKey: "AIzaSyAaGiNu_NpjiJ4-5riPSIGhR4kIobyCiR8",
-        authDomain: "tareasbd-330a7.firebaseapp.com",
-        projectId: "tareasbd-330a7",
-        storageBucket: "tareasbd-330a7.appspot.com",
-        messagingSenderId: "323871413388",
-        appId: "1:323871413388:web:12648ed0946a5b885957a9"
+        apiKey: "AIzaSyA7-CDgsY_kEfpc3MqnO05fYSfC8XAEi7I",
+        authDomain: "pokemon-454cd.firebaseapp.com",
+        projectId: "pokemon-454cd",
+        storageBucket: "pokemon-454cd.appspot.com",
+        messagingSenderId: "793938460040",
+        appId: "1:793938460040:web:dd3d99563ab1a38fbd4e3d"
     }
 };

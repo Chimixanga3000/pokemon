@@ -1,7 +1,6 @@
 export class Libro{
     id!: string;
     nombret!: string;
-    des!: string;
-    fecha!: string;
+    tamano!: string;
     tipo!: number;
 }
